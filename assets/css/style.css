@@ -34,18 +34,65 @@ div { /* debug */
     height: 100vh;
   }
 
+    /* profilo in alto a sinistra */
+
     #profilo {
       display: flex;
       flex-shrink: 0;
+      justify-content: space-between;
+      align-items: center;
       width: 100%;
       height: 80px;
     }
 
+      .img-top {
+        width: 64px;
+        height: 64px;
+        margin-left: 6px;
+      }
+
+      .tris-icone {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 120px;
+        height: 100%;
+      }
+
+        .icona {
+          width: calc(120px / 3);
+          height: 50%;
+        }
+
     #attiva-notifiche {
       display: flex;
+      justify-content: center;
+      align-items: center;
       width: 100%;
       height: 100px;
     }
+
+      .img-mid {
+        width: 70px;
+        height: 70px;
+      }
+
+      .due-righe {
+        width: 200px;
+        height: 50px;
+      }
+
+        .rigauno, .rigadue {
+          width: 100%;
+        }
+
+        .rigauno {
+          height: 55%;
+        }
+
+        .rigadue {
+          height: 45%;
+        }
 
     #cerca-chat {
       display: flex;
@@ -80,6 +127,7 @@ div { /* debug */
 
     #chat-corrente, #scrivi-messaggio {
       display: flex;
+      flex-direction: row;
       flex-shrink: 0;
       width: 100%;
       height: 80px;
