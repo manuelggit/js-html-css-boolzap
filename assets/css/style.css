@@ -310,3 +310,18 @@ h6 {
         width: calc(100% - 30px - 30px - 80px);
         height: 90%;
       }
+
+/* TEMPLATE */
+
+#template {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+
+  .messaggio-inviato {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+  }
