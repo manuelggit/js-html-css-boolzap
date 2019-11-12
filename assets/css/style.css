@@ -14,6 +14,22 @@ grigio scritte: #4a4a4a
 nero: #000000
 verde: #02d1a4 */
 
+#profilo, #chat-corrente, #scrivi-messaggio, #cerca-chat {
+  background-color: #f2f2f2;
+}
+
+.tris-icone {
+  color: #4a4a4a;
+}
+
+#attiva-notifiche {
+  background-color: lightblue;
+}
+
+#chat-contenuto {
+  background-color: #e0e0e0;
+}
+
 div { /* debug */
   border: 1px solid black;
 }
@@ -137,6 +153,10 @@ div { /* debug */
         align-items: center;
         width: 100%;
         height: 100px;
+      }
+
+      .ok {
+        background-color: #e0e4e5;
       }
 
         .chat-sx {
