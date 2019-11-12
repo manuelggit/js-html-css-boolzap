@@ -191,7 +191,42 @@ div { /* debug */
       height: 80px;
     }
 
+    /* parte alta: nome della chat corrente */
+
+    #chat-corrente {
+      display: flex;
+      justify-content: space-between;
+    }
+
+      #sx-chat-corrente {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: 80px;
+      }
+
     #chat-contenuto {
       width: 100%;
       height: calc(100vh - 160px);
     }
+
+    /* parte media: il contenuto della chat */
+
+    /* parte bassa: l'utente che scrive il messaggio */
+
+    #scrivi-messaggio {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+      .emoticon, .invio {
+        width: 30px;
+        height: 30px;
+      }
+
+      .spazio-scrivi-messaggio {
+        width: calc(100% - 30px - 30px - 80px);
+        height: 90%;
+      }
