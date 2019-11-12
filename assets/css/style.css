@@ -94,12 +94,35 @@ div { /* debug */
           height: 45%;
         }
 
+    /* cerca chat */
+
     #cerca-chat {
       display: flex;
+      justify-content: center;
+      align-items: center;
       flex-shrink: 0;
       width: 100%;
       height: 50px;
     }
+
+      #cerca-chat-int {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 96%;
+        height: 90%;
+      }
+
+        .icona-cerca-sx {
+          width: 15%;
+          height: 70%;
+        }
+
+        .cerca-scrivi {
+          width: 70%;
+          height: 70%;
+        }
+
 
     /* elenco delle chat */
 
@@ -111,9 +134,44 @@ div { /* debug */
 
       .chat {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
         height: 100px;
       }
+
+        .chat-sx {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 220px;
+          height: 80px;
+        }
+
+          .info-contatto {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: calc(100% - 70px);
+            height: 40px;
+          }
+
+            .nome-contatto {
+              width: 100%;
+              height: 60%;
+            }
+
+            .frase-contatto {
+              width: 100%;
+              height: 30%;
+            }
+
+
+        .ora {
+          width: 30px;
+          height: 50px;
+        }
+
 
   /* PARTE DESTRA */
 
