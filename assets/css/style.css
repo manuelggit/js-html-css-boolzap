@@ -318,10 +318,13 @@ h6 {
   justify-content: center;
   align-items: center;
   width: 400px;
+  height: 400px;
 }
 
   .messaggio-inviato {
     display: flex;
     justify-content: space-between;
+    background-color: lightgreen;
     width: 300px;
+    height: 100px;
   }
