@@ -65,6 +65,8 @@ div { /* debug */
         width: 64px;
         height: 64px;
         margin-left: 6px;
+        border-radius: 50px;
+        margin-right: 10px;
       }
 
       .tris-icone {
@@ -99,6 +101,9 @@ div { /* debug */
         width: 70px;
         height: 70px;
         background-color: #ffffff;
+        border-radius: 50px;
+        margin-right: 10px;
+        margin-left: 10px;
       }
 
         .img-mid i {
@@ -187,7 +192,7 @@ div { /* debug */
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            width: calc(100% - 70px);
+            width: calc(100% - 100px);
             height: 40px;
           }
 
