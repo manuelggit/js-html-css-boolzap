@@ -76,6 +76,10 @@ div { /* debug */
       }
 
         .icona {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.2em;
           width: calc(120px / 3);
           height: 50%;
         }
@@ -89,9 +93,18 @@ div { /* debug */
     }
 
       .img-mid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 70px;
         height: 70px;
+        background-color: #ffffff;
       }
+
+        .img-mid i {
+          font-size: 1.2em;
+          color: lightblue;
+        }
 
       .due-righe {
         width: 200px;
@@ -130,6 +143,9 @@ div { /* debug */
       }
 
         .icona-cerca-sx {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           width: 15%;
           height: 70%;
         }
@@ -241,6 +257,10 @@ div { /* debug */
     }
 
       .emoticon, .invio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
         width: 30px;
         height: 30px;
       }
