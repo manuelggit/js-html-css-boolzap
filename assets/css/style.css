@@ -123,7 +123,6 @@ div { /* debug */
           height: 70%;
         }
 
-
     /* elenco delle chat */
 
     #elenco-chat {
@@ -202,7 +201,7 @@ div { /* debug */
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 250px;
+        width: calc(100% - 120px);
         height: 80px;
       }
 
