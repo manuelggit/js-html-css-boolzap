@@ -8,14 +8,17 @@ $( document ).ready(function(){
     console.log(messaggio);
 
     // copio il div del messaggio inviato che è all'interno del template: ne creo una variabile
-    var messaggioInviato = $('#template .messaggio-inviato').clone();
+    var messaggioInviato = $('#template .template-messaggio').clone();
     console.log(messaggioInviato);
 
     // ora inserisco il testo del messaggio a questa copia
-    messaggioInviato.find('.messaggio-utente').text(messaggio);
+    messaggioInviato.find('.testo').text(messaggio);
 
     // grazie all'append posso stampare in pagina (nel contenuto della chat) questo messaggio
     $('#chat-contenuto').append(messaggioInviato);
+
+    // ripulisco il campo del messaggio-utente
+    $('.messaggio-utente').val("");
 
   });
 
