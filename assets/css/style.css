@@ -318,7 +318,7 @@ h6 {
 
 /* TEMPLATE */
 
-#template {
+.template {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -326,7 +326,7 @@ h6 {
   height: 100%;
 }
 
-  .template-messaggio {
+  .template-inviato {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -334,12 +334,35 @@ h6 {
     color: black;
     font-size: 0.8em;
     max-width: 70%;
-    min-height: 100px;
+    min-height: 40px;
     border-radius: 20px;
     margin-top: 10px;
     margin-left: 10px;
+    padding: 0 15px;
   }
 
-  .messaggio {
+  .template-ricevuto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    font-size: 0.8em;
+    max-width: 70%;
+    min-height: 40px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 0 15px;
+  }
 
+  .template-messaggio .orario {
+    display: flex;
+    align-items: flex-end;
+    font-size: 0.7em;
+    color: grey;
+  }
+
+  .input {
+    border: white;
   }
