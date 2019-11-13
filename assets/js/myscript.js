@@ -15,21 +15,39 @@ $( document ).ready(function(){
     messaggioInviato.removeClass('template');
     messaggioInviato.addClass('template-inviato');
 
-    var contromessaggio = 'ok';
-    console.log(contromessaggio);
-
-    var messaggioRicevuto = $('.template .template-messaggio').clone();
-    console.log(messaggioRicevuto);
-    messaggioRicevuto.removeClass('template');
-    messaggioRicevuto.addClass('template-ricevuto');
+    // // risposta 'ok' (logica analoga al messaggio inviato)
+    // var contromessaggio = 'ok';
+    // console.log(contromessaggio);
+    //
+    // var messaggioRicevuto = $('.template .template-messaggio').clone();
+    // console.log(messaggioRicevuto);
+    // messaggioRicevuto.removeClass('template');
+    // messaggioRicevuto.addClass('template-ricevuto');
 
     // ora inserisco il testo del messaggio a questa copia
     messaggioInviato.find('.testo').text(messaggio);
-    messaggioRicevuto.text(contromessaggio);
+    // messaggioRicevuto.text(contromessaggio);
 
     // grazie all'append posso stampare in pagina (nel contenuto della chat) questo messaggio
     $('#chat-contenuto').append(messaggioInviato);
-    $('#chat-contenuto').append(messaggioRicevuto);
+
+    setTimeout(risposta, 1000);
+
+    function risposta() {
+      // risposta 'ok' (logica analoga al messaggio inviato)
+      var contromessaggio = 'ok';
+      console.log(contromessaggio);
+
+      var messaggioRicevuto = $('.template .template-messaggio').clone();
+      console.log(messaggioRicevuto);
+      messaggioRicevuto.removeClass('template');
+      messaggioRicevuto.addClass('template-ricevuto');
+      messaggioRicevuto.text(contromessaggio);
+      $('#chat-contenuto').append(messaggioRicevuto);
+    }
+
+
+
 
     // ripulisco il campo del messaggio-utente
     $('.messaggio-utente').val("");
