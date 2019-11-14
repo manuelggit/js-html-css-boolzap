@@ -99,6 +99,10 @@ h6 {
         margin-right: 10px;
       }
 
+      .io {
+        background-image: url('../css/img/avatar_io.jpg');
+      }
+
       .tris-icone {
         display: flex;
         justify-content: space-around;
@@ -223,6 +227,38 @@ h6 {
           width: 250px;
           height: 80px;
         }
+
+          .mario, .paolo, .chiara, .alessandro, .valeria, .luigi, .franco, .io {
+            background-size: cover;
+          }
+
+          .mario {
+            background-image: url('../css/img/avatar_1.jpg');
+          }
+
+          .paolo {
+            background-image: url('../css/img/avatar_2.jpg');
+          }
+
+          .chiara {
+            background-image: url('../css/img/avatar_6.jpg');
+          }
+
+          .alessandro {
+            background-image: url('../css/img/avatar_4.jpg');
+          }
+
+          .valeria {
+            background-image: url('../css/img/avatar_9.jpg');
+          }
+
+          .luigi {
+            background-image: url('../css/img/avatar_3.jpg');
+          }
+
+          .franco {
+            background-image: url('../css/img/avatar_7.jpg');
+          }
 
           .info-contatto {
             display: flex;
