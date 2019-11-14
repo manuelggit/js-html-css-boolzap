@@ -1,5 +1,7 @@
 $( document ).ready(function(){
 
+  ricercaChat();
+
   // quando clicco per scrivere un messaggio il microfono diventa aeroplano
   $('.spazio-scrivi-messaggio').click(function(){
     $('#bottone-invio').removeClass('fa-microphone').addClass('fa-paper-plane');
@@ -34,6 +36,8 @@ $( document ).ready(function(){
 
     setTimeout(risposta, 1000);
 
+    //FUNZIONE RISPOSTA AUTOMATICA "OK"
+
     function risposta() {
       // risposta 'ok' (logica analoga al messaggio inviato)
       var contromessaggio = 'ok';
@@ -52,7 +56,9 @@ $( document ).ready(function(){
 
   });
 
-  // RICERCA CHAT
+  // FUNZIONE RICERCA CHAT
+
+  function ricercaChat() {
 
   // quando premo un tasto sulla tastiera quando sono nell'input
   $('.cerca-conversazione').keyup(function(event){
@@ -75,5 +81,19 @@ $( document ).ready(function(){
     })
 
   });
+
+  $('.chat').click(function(){
+
+    var chatAttuale = $('#elenco-chat .ok');
+    chatAttuale.removeClass('ok');
+
+    if(!$(this).hasClass('ok')){
+      chatAttuale.removeClass('ok');
+      $(this).addClass('ok');
+    }
+
+  });
+
+  }
 
 });
