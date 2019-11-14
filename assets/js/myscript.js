@@ -43,12 +43,36 @@ $( document ).ready(function(){
       console.log(messaggioRicevuto);
       messaggioRicevuto.removeClass('template');
       messaggioRicevuto.addClass('template-ricevuto');
-      messaggioRicevuto.text(contromessaggio);
+      messaggioRicevuto.find('.testo').text(contromessaggio);
       $('#chat-contenuto').append(messaggioRicevuto);
     }
 
     // ripulisco il campo del messaggio-utente
     $('.messaggio-utente').val("");
+
+  });
+
+  // RICERCA CHAT
+
+  // quando premo un tasto sulla tastiera quando sono nell'input
+  $('.cerca-conversazione').keyup(function(event){
+
+    // creo la variabile (che trasforma anche ciò che inserisco in minuscolo con toLowerCase) che mi salva la ricerca che faccio nell'input
+    var ricerca = $('.cerca-conversazione').val().toLowerCase();
+    console.log(ricerca);
+
+    // ciclo le varie chat con l'each
+    $('.chat').each(function(){
+      // rendo i contatti tutti minuscoli a loro volta
+      var contatto = $(this).text().toLowerCase();
+      console.log(contatto);
+      //se trova la ricerca all'interno del contatto (che ora è tutto minuscolo) lo lascio, altrimento lo nascondo
+      if(contatto.includes(ricerca)) {
+        $(this).show();
+        } else {
+        $(this).hide();
+      }
+    })
 
   });
 
